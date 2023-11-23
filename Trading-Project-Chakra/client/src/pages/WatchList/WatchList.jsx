@@ -149,6 +149,7 @@ export default function WatchList() {
   const handleSelect = (value) => {
     setSelectedValue(value);
   };
+  
 
   const [selectedValueAsset, setSelectedValueAsset] = useState("All Assets");
 
