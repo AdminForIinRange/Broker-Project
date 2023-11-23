@@ -149,7 +149,6 @@ export default function WatchList() {
   const handleSelect = (value) => {
     setSelectedValue(value);
   };
-  
 
   const [selectedValueAsset, setSelectedValueAsset] = useState("All Assets");
 
@@ -274,61 +273,7 @@ export default function WatchList() {
             </Button>
           </HStack>
 
-          {/* <Grid templateColumns={"repeat(12, 1fr) "} templateRows={"repeat(1, 1fr) "}  gridTemplate={"repeat(10, 1fr)"}>
-
-<GridItem  gridColumn={{
-          base: "1/3",
-          xsm: "1/10",
-          ssm:"1/2",
-          sm: "1/2",
-          md: "5/10 span",
-          lg: "6/10 span",
-          xl: "7/10 span",
-          xxl: "8/10 span",
-          xxxl: " 9/10 span ",
-        }}
-
-      
-       >
-
-
-<Wrap  >
-
-<InputGroup  w={"100%"} color={"black"}>
-                    <InputLeftElement pointerEvents="none">
-                      <SearchIcon />
-                    </InputLeftElement>
-                    <Input
-                      type="tel"
-                      placeholder="Search"
-                      colorScheme="whiteAlpha"
-                      variant="ghost"
-                      color={{
-                        base: "red",
-                        xsm: "blue",
-                        ssm:"orange",
-                        sm: "green",
-                        md: "purple",
-                        lg: "gray",
-                        xl: "yellow",
-                        xxl: "pink",
-                        xxxl: "black",
-                      }}
-            
-            
-            
-            
-            
-                    />
-                  </InputGroup>
-
-
-</Wrap>
-
-</GridItem>
-
-
-</Grid> */}
+        
 
           <Table variant="simple" align="center">
             <Thead>
@@ -1204,7 +1149,9 @@ export default function WatchList() {
               colorScheme="whiteAlpha"
               bg={"rgba(22, 20, 20, 0.49)"}
             >
-              <Text fontSize={"20px"}><UpDownIcon /></Text>
+              <Text fontSize={"20px"}>
+                <UpDownIcon />
+              </Text>
             </Button>
 
             <Wrap w={{ base: "auto", xsm: "auto", ssm: "30.3%", sm: "30.3%" }}>
